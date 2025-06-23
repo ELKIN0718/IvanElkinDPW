@@ -1,0 +1,110 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #6b4226;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.menu {
+  list-style: none; /* Quitar viñetas */
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+}
+
+.menu-item {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.menu-item a p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.menu-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-item p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: larger;
+  color: #3b2c20;
+}
+
+.menu-item:hover {
+  border-color: darkgoldenrod;
+  transform: scale(1.02);
+}
+
+.menu-item:hover .menu-item img {
+  border-color: darkgoldenrod;
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  color: #3b2c20;
+}
+
+.product {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.product:hover {
+  border-color: darkgoldenrod;  
+  animation-delay: 0.5ms;
+}
+
+.product img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+.product:hover img{
+  border-color:blanchedalmond;
+  border-style: solid;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
